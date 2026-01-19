@@ -24,9 +24,12 @@
 .button:hover{
     transform: scale(1.1)
 }
-
-
-
+body{
+    background-color: rgba(26, 11, 46, 1);
+}
+.bgcolor2{
+    background-color:rgba(145, 0, 248, 1);
+}
 
 
 
@@ -47,7 +50,7 @@
 
 .menu .menu-item a{
     text-decoration: none;
-    color: rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 0.9);
     font-size: 1rem;
     font-weight: 500;
 }
@@ -62,6 +65,10 @@
     border: none;
     font-size: 1rem;
     font-weight: 600;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
 }
 .navbar{
     justify-content: space-between;
@@ -69,8 +76,7 @@
     align-items: center;
     /* margin: 0 auto; */
     background-color: rgba(26, 11, 46, 1);
-    /* border-bottom: 0.5px solid; 
-    border-image: linear-gradient(47.64deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1)) 1; */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .menu-item{
     gap: 32px;
@@ -89,6 +95,9 @@
     border: 1px solid rgba(0, 255, 136, 1);
     font-size: 1rem;
     font-weight: 600;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
 }
 .hero-text{
     text-align: center;
@@ -104,7 +113,7 @@
     margin-top: 40px;
 }
 .hero-text p{
-    color: rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255,0.8);
     font-size: 1rem;
     font-weight: 400;
     margin-bottom: 24px;
@@ -116,8 +125,8 @@
 }
 .microphone{
     position: absolute;
-    top: 80px;
-    left: 120px;
+    top: 79px;
+    left: 118px;
 }
 .hero-circle{
     /* padding-top: 105px; */
@@ -126,8 +135,59 @@
     margin: 0 auto;
     /* background-color: tomato; */
 }
+.newbtn button{
+    color:rgba(26, 11, 46, 1);
+    font-size: 18px;
+    font-weight: 600;
+    border-style: none;
+    background-color:rgba(0, 255, 136, 1);
+    border-radius: 1000px;
+    box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
+    padding: 8px 16px;
+    position: absolute;
+    top: 12px;
+    right: 23px;
+}
+.about{
+    text-align: center;
+}
+.main-text{
+    max-width: 1200px;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.main-text h1{
+    font-size: 48px;
+    font-weight: 700;
+    color:rgba(255, 255, 255, 1);
+    padding-top: 50px;
+}
+.main-text p{
+    color:rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-bottom: 79.5px;
+}
+.stats-card h1{
+    color: rgba(0, 255, 136, 1);
+    font-size: 48px;
+    font-weight: 900;
+}
+.stats-card p{
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 16px;
+}
+.stats-parent{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 80.5px 0 120px;
+}
 
- 
+
+
 /* media query */
 @media screen and (max-width: 576px){
     

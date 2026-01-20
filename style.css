@@ -96,6 +96,7 @@ body{
     background-position: center;
     padding: 97px 0;
 }
+
 .second-button{
     color:  rgba(0, 255, 136, 1);
     padding: 12px 16px;
@@ -432,23 +433,55 @@ footer{
     font-size: 32px;
     padding-left: 0;
     }
-section{
+    section{
     background: rgba(35, 14, 61, 1);
     padding: 40px 20px;
     }
     .main-text h1 {
     font-size: 32px;
-}
-.main-text {
+    }
+    .main-text {
     max-width: 400px;
-}
-.stats-parent {
+    }
+    .stats-parent {
     /* max-width: 1200px; */
     grid-template-columns: repeat(2, 1fr);
-}
-.main-text p{
+    }
+    .main-text p{
     padding: 40px 20px;
-}
+    }
+    .hero{
+        padding: 40px 0;
+        /* background-size: 100% 100%; */
+        /* background-size: cover; */
+    }
+    .hero-text h2{
+    font-size: 40px;
+    margin-top: 24px;
+    }
+    .hero-circle img{
+        max-width: 200px;
+        max-height: 200px;
+    }
+    .microphone img{
+        max-width: 80px;
+        max-height: 80px;
+    }
+    .hero-circle{
+        max-width: 200px;
+    }
+    .microphone {
+    top: 59px;
+    left: 78px;
+    }
+    .newbtn button{
+        top: 0px;
+        right: 0px;
+    }
+    
+
+
+
 
 
 }

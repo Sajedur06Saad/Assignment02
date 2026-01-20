@@ -58,6 +58,7 @@ body{
 }
 #menu-toggle:checked ~ .hammenu {
   display: block;
+  
 }
 
 
@@ -218,6 +219,7 @@ body{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 80.5px 0 120px;
+    align-items: center;
 }
 #bolt i{
     font-size: 60px;
@@ -240,7 +242,7 @@ section h1{
 }
 section{
     background: rgba(35, 14, 61, 1);
-    padding: 120px 200px;
+    padding: 120px;
 }
 .why h3{
     color: rgba(255, 255, 255, 1);
@@ -390,6 +392,7 @@ section{
 .ftlogo div {
     display: flex;
     gap: 8px;
+    font-weight: 500;
 }
 small{
     color: rgba(250, 250, 250, 0.6);
@@ -518,7 +521,13 @@ footer{
         gap: 10px;
         
     }
-
+    .feature-parent{
+    margin: 40px 5% 0;
+    }
+    footer{
+        /* background-size:100% 100%; */
+    }
+    
 }
 @media screen and (min-width:992px) {
     /* body{background-color: tomato; */

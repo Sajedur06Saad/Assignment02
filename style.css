@@ -13,7 +13,10 @@
 
 /* shared styles */
 .display-flex,
-.menu-item
+.menu-item,
+.feature-parent,
+.lgp,
+.host
 {
     display: flex;
 }
@@ -190,7 +193,7 @@ body{
     width: 60px;
     height: 60px;
     
-    /* background-c olor: tomato; */
+    /* background-color: tomato; */
      background: linear-gradient(47.64deg, rgba(247,233,63,1), rgba(251,9,180,1), rgba(145,0,248,1));
      -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -215,6 +218,7 @@ section{
 }
 .why p{
     color: rgba(255, 255, 255, 0.6);
+    line-height: 24px;
 }
 .why img, .why i{
     margin-bottom: 16px;
@@ -252,6 +256,97 @@ section{
 #rich{
     grid-area: rich;
 }
+.featured h1{
+    padding-top: 120px;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+}
+.video{
+    width: 380px;
+    background: rgba(37, 13, 68, 1);
+    border-radius: 24px;
+}
+.video:hover{
+    box-shadow:10px 10px 5px rgba(147, 94, 215, 0.1);
+}
+.video iframe{
+    border-radius: 24px 24px 0 0;
+}
+.video-text{
+    padding: 24px;
+}
+.video-text h3{
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 12px;
+}
+.video-text p{
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 12px;
+}
+.video-text div{
+    display: flex;
+    gap: 6px;
+    color: rgba(0, 255, 136, 1);
+}
+.feature-parent{
+    margin-top: 40px;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+.lgp{
+    gap: 8px;
+}
+.lgp div {
+  display: inline-flex;       
+  align-items: center;
+  justify-content: center;
+  padding: 10px;               
+  border: 2px solid rgba(83, 60, 114, 1);   
+  border-radius: 50%;         
+}
+
+.lgp div img {
+  width: 20px;
+  height: 20px;
+}
+.host{
+    border-radius: 40px;
+    background: rgba(53, 17, 101, 0.4);
+    padding: 40px;
+}
+#mth{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#mth h1{
+    margin-bottom: 40px;
+}
+.host-text h2{
+    color: rgba(255, 255, 255, 1);
+    font-size: 32px;
+    font-weight: 700;
+}
+.host-text p{
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.host{
+    gap: 24px;
+    margin-bottom: 120px;
+}
+
+
+
+
+
+
+
+
 
 
 

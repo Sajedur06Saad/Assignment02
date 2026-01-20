@@ -339,9 +339,23 @@ section{
     gap: 24px;
     margin-bottom: 120px;
 }
+.ftlg h1{
+    font-size: 80px;
+    font-weight: 800;
+}
 
 
-
+.ftlogo {
+    display: flex;
+    gap: 40px;
+}
+.ftlogo div {
+    display: flex;
+    gap: 8px;
+}
+small{
+    color: rgba(250, 250, 250, 0.6);
+}
 /* live link er meet the host er styles ase nai */
 
 

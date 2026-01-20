@@ -231,6 +231,7 @@ section{
 }
 .why:hover{
     box-shadow:10px 10px 5px rgba(147, 94, 215, 0.1);
+    background-color: rgba(147, 94, 215, 0.5);
 }
 .whyparent{
     display: grid;
@@ -348,6 +349,9 @@ section{
 .ftlogo {
     display: flex;
     gap: 40px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 32px;
+    justify-content: center;
 }
 .ftlogo div {
     display: flex;
@@ -355,6 +359,16 @@ section{
 }
 small{
     color: rgba(250, 250, 250, 0.6);
+
+}
+
+
+footer{
+    text-align: center;
+    background-image: url(./assets/footer-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 120px 0;
 }
 /* live link er meet the host er styles ase nai */
 

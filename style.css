@@ -39,6 +39,9 @@ body{
 
 
 
+
+
+
 /* navbar related styles */
 
 #text-lg{
@@ -80,6 +83,9 @@ body{
     /* margin: 0 auto; */
     background-color: rgba(26, 11, 46, 1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.hamburger{
+    display: none;
 }
 .menu-item{
     gap: 32px;
@@ -171,6 +177,8 @@ body{
     font-weight: 400;
     line-height: 20px;
     padding-bottom: 79.5px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 .stats-card h1{
     color: rgba(0, 255, 136, 1);
@@ -205,6 +213,7 @@ section h1{
     font-weight: 700;
     text-align: center;
     margin-bottom: 40px;
+    padding-left: 300px;
 }
 section{
     background: rgba(35, 14, 61, 1);
@@ -265,7 +274,6 @@ section{
     font-weight: 700;
 }
 .video{
-    width: 380px;
     background: rgba(37, 13, 68, 1);
     border-radius: 24px;
 }
@@ -274,6 +282,7 @@ section{
 }
 .video iframe{
     border-radius: 24px 24px 0 0;
+    width: 100%;
 }
 .video-text{
     padding: 24px;
@@ -292,9 +301,9 @@ section{
     color: rgba(0, 255, 136, 1);
 }
 .feature-parent{
-    margin-top: 40px;
+    margin: 40px 12.5% 0;
     gap: 30px;
-    justify-content: center;
+    justify-content: space-around;
     margin-bottom: 120px;
 }
 .lgp{
@@ -323,6 +332,8 @@ section{
     margin: 0 auto;
 }
 #mth h1{
+    font-size: 48px;
+    font-weight: 700;
     margin-bottom: 40px;
 }
 .host-text h2{
@@ -370,14 +381,86 @@ footer{
     background-position: center;
     padding: 120px 0;
 }
-/* live link er meet the host er styles ase nai */
 
-
-
-
+.hide{
+    display: none !important;
+}
 
 
 
 
 
 /* media query */
+@media screen and (max-width:576px) {
+        .ftlogo {
+    flex-wrap: wrap;
+        }
+        .ftlg h1{
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 10px;
+        }
+        #mth h1 {
+    font-size: 32px;
+        }
+    .host{
+        flex-direction: column;
+        margin: 0 20px 40px;
+        
+    }
+    .host-text h2 {
+    font-size: 24px;
+    font-weight: 700;
+    }
+    .featured h1 {
+    font-size: 32px;
+    }
+    .feature-parent {
+    flex-direction: column;
+    align-items: center;
+    }
+        .whyparent {
+    gap: 30px;
+    grid-template-areas:
+        "premium"
+        "mobile"
+        "global"
+        "exclusive"
+        "rich";
+    }
+    section h1 {
+    font-size: 32px;
+    padding-left: 0;
+    }
+section{
+    background: rgba(35, 14, 61, 1);
+    padding: 40px 20px;
+    }
+    .main-text h1 {
+    font-size: 32px;
+}
+.main-text {
+    max-width: 400px;
+}
+.stats-parent {
+    /* max-width: 1200px; */
+    grid-template-columns: repeat(2, 1fr);
+}
+.main-text p{
+    padding: 40px 20px;
+}
+
+
+}
+@media screen and (min-width:992px) {
+    /* body{background-color: tomato; */
+    .host{
+    margin: 0 20px 120px;
+    }
+    section h1 {
+    font-size: 30px;
+    /* margin-bottom: 40px; */
+    padding-left: 249px;
+    }
+
+}
